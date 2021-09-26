@@ -1,0 +1,835 @@
+
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title> T R E N </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/header.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1 class="header_slogan--title"> T R E N </h1>
+								<p>Que de bon souvenir :))<br />
+								</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#Tristan">Tristan</a></li>
+								<li><a href="#Randy">Randy</a></li>
+								<li><a href="#2024">Nous :)</a></li>
+								<li><a href="#Emma">Emma</a></li>
+								<li><a href="#Nathan">Nathan</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Tristan -->
+							<article id="Tristan">
+							<style>
+    body{ 
+        margin:0; 
+    }
+    .box-rebbbyours{ 
+        height: 15vh; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+    }
+    .box_jhogvur, .box_hhEeerure, .box_mitgnuefte, .box_secefoegnde { 
+        padding: 10px; 
+    }
+    #jourefer, #heeurrre, #minuteefre, #secofgnede { 
+        background:black; 
+        padding: 10px 20px; 
+        color: white; 
+        font-size: 3rem; 
+        font-weight: bold; 
+    }
+    #jourrgr_label, #heureefre_label, #minuertef_label, #secoefnsdde_label { 
+        font-size: 1.5rem; 
+    }
+</style>
+</head>
+<body>
+<div class="box-rebbbyours">        
+    <div class="box_jhogvur">
+        <div id="jourefer">00</div>
+        <span id="jourrgr_label">Jours</span>
+    </div>
+    <div class="box_hhEeerure">
+        <div id="heeurrre">00</div>
+        <span id="heureefre_label">Heures</span>
+    </div>
+    <div class="box_mitgnuefte">
+        <div id="minuteefre">00</div>
+        <span id="minuertef_label">Minutes</span>
+    </div>
+    <div class="box_secefoegnde">
+        <div id="secofgnede">00</div>
+        <span id="secoefnsdde_label">Secondes</span>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function reboursF()
+    {
+        let rebours = document.getElementById("rebours"),
+            jourefer = document.getElementById("jourefer"),
+            jourrgr_label = document.getElementById("jourrgr_label"),
+            heeurrre = document.getElementById("heeurrre"),
+            heureefre_label = document.getElementById("heureefre_label"),
+            minuteefre = document.getElementById("minuteefre"),
+            minuertef_label = document.getElementById("minuertef_label"),
+            secofgnede = document.getElementById("secofgnede"),
+            secoefnsdde_label = document.getElementById("secoefnsdde_label"),
+            maintenant = new Date(),
+            finannee = new Date('August 12, 2022 23:59:59');
+
+        let to0ttal_secondes = (finannee - maintenant) / 1000;
+         
+        if (to0ttal_secondes > 0)
+        {
+            let nb_jooiurs = Math.floor(to0ttal_secondes / (60 * 60 * 24));
+            let nb_heurretes = Math.floor((to0ttal_secondes - (nb_jooiurs * 60 * 60 * 24)) / (60 * 60));
+            let nb_mitrnutes = Math.floor((to0ttal_secondes - ((nb_jooiurs * 60 * 60 * 24 + nb_heurretes * 60 * 60))) / 60);
+            let nb_secondtres = Math.floor(to0ttal_secondes - ((nb_jooiurs * 60 * 60 * 24 + nb_heurretes * 60 * 60 + nb_mitrnutes * 60)));
+
+            jourefer.textContent = caractere(nb_jooiurs);
+            heeurrre.textContent = caractere(nb_heurretes);
+            minuteefre.textContent = caractere(nb_mitrnutes);
+            secofgnede.textContent = caractere(nb_secondtres);
+
+            jourrgr_label.textContent = genre(nb_jooiurs, 'jour');
+            heureefre_label.textContent = genre(nb_heurretes, 'heure');
+            minuertef_label.textContent = genre(nb_mitrnutes, 'minute');
+            secoefnsdde_label.textContent = genre(nb_secondtres, 'seconde');        
+        }
+
+        let minuteur = setTimeout("reboursF();", 1000);
+    }
+
+    function genre(nb, libelle)
+    {
+        return (nb > 1) ? libelle+'s' : libelle;
+    }
+
+    function caractere(nb)
+    {
+        return (nb < 10) ? '0'+nb : nb;
+    }
+
+    reboursF();
+</script>
+						</article>
+		                <!-- Randy -->
+		                    <article id="Randy">
+								<style>
+
+								body{ 
+            margin:0; 
+        }
+.box-reeabours{ 
+    height: 15vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+.box_jour, .box_heure, .box_minute, .box_seconde { 
+    padding: 10px; 
+}
+#jouree, #heurerh, #minute, #seconde { 
+    background:black; 
+    padding: 10px 20px; 
+    color: white; 
+    font-size: 3rem; 
+    font-weight: bold; 
+}
+#jo1aur_label, #heefgure_label, #minute_label, #seconde_label { 
+    font-size: 1.5rem; 
+}
+    </style>
+</head>
+								<body>
+    <div class="box-reeabours">        
+        <div class="box_joour">
+            <div id="jouree">00</div>
+            <span id="jo1aur_label">Jours</span>
+        </div>
+        <div class="box_heure">
+            <div id="heurerh">00</div>
+            <span id="heefgure_label">Heures</span>
+        </div>
+        <div class="box_minute">
+            <div id="minute">00</div>
+            <span id="minute_label">Minutes</span>
+        </div>
+        <div class="box_seconde">
+            <div id="seconde">00</div>
+            <span id="seconde_label">Secondes</span>
+        </div>
+    </div>
+ 
+    <script type="text/javascript">
+        function reboursF()
+        {
+            let rebours = document.getElementById("rebours"),
+                jouree = document.getElementById("jouree"),
+                jo1aur_label = document.getElementById("jo1aur_label"),
+                heurerh = document.getElementById("heurerh"),
+                heefgure_label = document.getElementById("heefgure_label"),
+                minute = document.getElementById("minute"),
+                minute_label = document.getElementById("minute_label"),
+                seconde = document.getElementById("seconde"),
+                seconde_label = document.getElementById("seconde_label"),
+                maintenant = new Date(),
+                finanneee = new Date('December 30, 2021 23:59:59');
+ 
+            let total_secondes = (finanneee - maintenant) / 1000;
+             
+            if (total_secondes > 0)
+            {
+                let nb_jours = Math.floor(total_secondes / (60 * 60 * 24));
+                let nb_heures = Math.floor((total_secondes - (nb_jours * 60 * 60 * 24)) / (60 * 60));
+                let nb_minutes = Math.floor((total_secondes - ((nb_jours * 60 * 60 * 24 + nb_heures * 60 * 60))) / 60);
+                let nb_secondes = Math.floor(total_secondes - ((nb_jours * 60 * 60 * 24 + nb_heures * 60 * 60 + nb_minutes * 60)));
+ 
+                jouree.textContent = caractere(nb_jours);
+                heurerh.textContent = caractere(nb_heures);
+                minute.textContent = caractere(nb_minutes);
+                seconde.textContent = caractere(nb_secondes);
+ 
+                jo1aur_label.textContent = genre(nb_jours, 'jour');
+                heefgure_label.textContent = genre(nb_heures, 'heure');
+                minute_label.textContent = genre(nb_minutes, 'minute');
+                seconde_label.textContent = genre(nb_secondes, 'seconde');        
+            }
+ 
+            let minuteur = setTimeout("reboursF();", 1000);
+        }
+ 
+        function genre(nb, libelle)
+        {
+            return (nb > 1) ? libelle+'s' : libelle;
+        }
+ 
+        function caractere(nb)
+        {
+            return (nb < 10) ? '0'+nb : nb;
+        }
+ 
+        reboursF();
+    </script>
+							</article>
+							
+							<!-- 2024 -->
+							<article id="2024">
+							    <h2 class="major">2021 :</h2>
+                                <p>Vous etes tous pour moi partez pas..<3 </p>
+							    <span class="image main"><img src="images/2021.jpg" alt="" /></span>
+								<h2 class="major">2031 :</h2>
+                            </article>
+						<!-- Emma -->
+							<article id="Emma">
+								<style>
+
+								body{ 
+            margin:0; 
+        }
+.box-reebours{ 
+    height: 15vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+.box_joour, .box_heeure, .box_miinute, .box_seeconde { 
+    padding: 10px; 
+}
+#joour, #heeure, #miinute, #seeconde { 
+    background:black; 
+    padding: 10px 20px; 
+    color: white; 
+    font-size: 3rem; 
+    font-weight: bold; 
+}
+#joour_label, #heeure_label, #miinute_label, #seeconde_label { 
+    font-size: 1.5rem; 
+}
+    </style>
+</head>
+								<body>
+    <div class="box-reebours">        
+        <div class="box_joour">
+            <div id="joour">00</div>
+            <span id="joour_label">Jours</span>
+        </div>
+        <div class="box_heeure">
+            <div id="heeure">00</div>
+            <span id="heeure_label">Heures</span>
+        </div>
+        <div class="box_miinute">
+            <div id="miinute">00</div>
+            <span id="miinute_label">Minutes</span>
+        </div>
+        <div class="box_seeconde">
+            <div id="seeconde">00</div>
+            <span id="seeconde_label">Secondes</span>
+        </div>
+    </div>
+ 
+    <script type="text/javascript">
+        function reboursF()
+        {
+            let reebours = document.getElementById("reebours"),
+                joour = document.getElementById("jour"),
+                joour_label = document.getElementById("joour_label"),
+                heeure = document.getElementById("heeure"),
+                heeure_label = document.getElementById("heeure_label"),
+                miinute = document.getElementById("miinute"),
+                miinute_label = document.getElementById("miinute_label"),
+                seeconde = document.getElementById("seeconde"),
+                seeconde_label = document.getElementById("seeconde_label"),
+                maintenant = new Date(),
+                finanneee = new Date('January 29, 2021 23:59:59');
+ 
+            let tootal_secondes = (finanneee - maintenant) / 1000;
+             
+            if (tootal_secondes > 0)
+            {
+                let nb_joours = Math.floor(tootal_secondes / (60 * 60 * 24));
+                let nb_heeures = Math.floor((tootal_secondes - (nb_joours * 60 * 60 * 24)) / (60 * 60));
+                let nb_miinutes = Math.floor((tootal_secondes - ((nb_joours * 60 * 60 * 24 + nb_heeures * 60 * 60))) / 60);
+                let nb_seecondes = Math.floor(tootal_secondes - ((nb_joours * 60 * 60 * 24 + nb_heeures * 60 * 60 + nb_miinutes * 60)));
+ 
+                joour.textContent = caractere(nb_joours);
+                heeure.textContent = caractere(nb_heeures);
+                miinute.textContent = caractere(nb_miinutes);
+                seeconde.textContent = caractere(nb_seecondes);
+ 
+                joour_label.textContent = genre(nb_joours, 'jour');
+                heeure_label.textContent = genre(nb_heeures, 'heure');
+                miinute_label.textContent = genre(nb_miinutes, 'minute');
+                seeconde_label.textContent = genre(nb_seecondes, 'seconde');        
+            }
+ 
+            let minuteur = setTimeout("reboursF();", 1000);
+        }
+ 
+        function genre(nb, libelle)
+        {
+            return (nb > 1) ? libelle+'s' : libelle;
+        }
+ 
+        function caractere(nb)
+        {
+            return (nb < 10) ? '0'+nb : nb;
+        }
+ 
+        reboursF();
+    </script>
+							</article>
+				                <!-- ??? -->
+		                            <article id="Nathan">
+							 <style>
+
+								body{ 
+            margin:0; 
+        }
+.boox-rebours{ 
+    height: 15vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+.bbox_jjour, .bbox_hheure, .bbox_mminute, .bbox_sseconde { 
+    padding: 10px; 
+}
+#jjour, #hheure, #mminute, #sseconde { 
+    background:black; 
+    padding: 10px 20px; 
+    color: white; 
+    font-size: 3rem; 
+    font-weight: bold; 
+}
+#jjour_label, #hheure_label, #mminute_label, #sseconde_label { 
+    font-size: 1.5rem; 
+}
+    </style>
+</head>
+<body>
+    <div class="boox-rebours">        
+        <div class="box_jour">
+            <div id="jjour">00</div>
+            <span id="jjour_label">Jours</span>
+        </div>
+        <div class="boox_hheure">
+            <div id="hheure">00</div>
+            <span id="hheure_label">Heures</span>
+        </div>
+        <div class="boox_mminute">
+            <div id="mminute">00</div>
+            <span id="mminute_label">Minutes</span>
+        </div>
+        <div class="bbox_sseconde">
+            <div id="sseconde">00</div>
+            <span id="sseconde_label">Secondes</span>
+        </div>
+    </div>
+ 
+    <script type="text/javascript">
+        function reboursF()
+        {
+            let reebours = document.getElementById("reebours"),
+                jjour = document.getElementById("jjour"),
+                jjour_label = document.getElementById("jjour_label"),
+                hheure = document.getElementById("hheure"),
+                hheure_label = document.getElementById("hheure_label"),
+                mminute = document.getElementById("mminute"),
+                mminute_label = document.getElementById("mminute_label"),
+                sseconde = document.getElementById("sseconde"),
+                sseconde_label = document.getElementById("sseconde_label"),
+                maintenant = new Date(),
+                finannee = new Date('October 17, 2021 23:59:59');
+ 
+            let total_secondes = (finannee - maintenant) / 1000;
+             
+            if (total_secondes > 0)
+            {
+                let nb_jjoours = Math.floor(total_secondes / (60 * 60 * 24));
+                let nb_hheeures = Math.floor((total_secondes - (nb_jjoours * 60 * 60 * 24)) / (60 * 60));
+                let nb_mmiinutes = Math.floor((total_secondes - ((nb_jjoours * 60 * 60 * 24 + nb_hheeures * 60 * 60))) / 60);
+                let nb_sseecondes = Math.floor(total_secondes - ((nb_jjoours * 60 * 60 * 24 + nb_hheeures * 60 * 60 + nb_mmiinutes * 60)));
+ 
+                jjour.textContent = caractere(nb_jjoours);
+                hheure.textContent = caractere(nb_hheeures);
+                mminute.textContent = caractere(nb_mmiinutes);
+                sseconde.textContent = caractere(nb_sseecondes);
+ 
+                jjour_label.textContent = genre(nb_jjoours, 'jour');
+                hheure_label.textContent = genre(nb_hheeures, 'heure');
+                mminute_label.textContent = genre(nb_mmiinutes, 'minute');
+                sseconde_label.textContent = genre(nb_sseecondes, 'seconde');        
+            }
+ 
+            let minuteur = setTimeout("reboursF();", 1000);
+        }
+ 
+        function genre(nb, libelle)
+        {
+            return (nb > 1) ? libelle+'s' : libelle;
+        }
+ 
+        function caractere(nb)
+        {
+            return (nb < 10) ? '0'+nb : nb;
+        }
+ 
+        reboursF();
+    </script>
+							</article>
+		                                <!-- News -->
+		                                        <article id="News">
+								<h2 class="major">News</h2>
+								<p>Chose(s) qui arriveront fin 2021 et début 2022 :</p>
+								<p>-KOTT Partie 1 - Octobre
+								<p>-K4A SHOW - Novembre</p>
+								<p>-KOTT Partie 2 - Décembre</p>
+								<p>-KOTT Partie 3 - Avril</p>
+								<p>-KOTT Partie 4 - Juin</p>
+								
+								<p>+ d'infos en Mai 2022 !</p>
+								<h2 class="major">BD</h2>
+								<p>La Saison 1 de KOTT est officielement terminer </p>
+								<p>Elle sort le 23Octobre !</p>
+								</article>
+						<!-- N -->
+						        <article id="N">
+								<style>
+
+								body{ 
+            margin:0; 
+        }
+.box-reebours{ 
+    height: 15vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+.box_joour, .box_heeure, .box_miinute, .box_seeconde { 
+    padding: 10px; 
+}
+#joour, #heeure, #miinute, #seeconde { 
+    background:black; 
+    padding: 10px 20px; 
+    color: white; 
+    font-size: 3rem; 
+    font-weight: bold; 
+}
+#joour_label, #heeure_label, #miinute_label, #seeconde_label { 
+    font-size: 1.5rem; 
+}
+    </style>
+</head>
+								<body>
+    <div class="box-reebours">        
+        <div class="box_joour">
+            <div id="joour">00</div>
+            <span id="joour_label">Jours</span>
+        </div>
+        <div class="box_heeure">
+            <div id="heeure">00</div>
+            <span id="heeure_label">Heures</span>
+        </div>
+        <div class="box_miinute">
+            <div id="miinute">00</div>
+            <span id="miinute_label">Minutes</span>
+        </div>
+        <div class="box_seeconde">
+            <div id="seeconde">00</div>
+            <span id="seeconde_label">Secondes</span>
+        </div>
+    </div>
+ 
+    <script type="text/javascript">
+        function reboursF()
+        {
+            let reebours = document.getElementById("reebours"),
+                joour = document.getElementById("joour"),
+                joour_label = document.getElementById("joour_label"),
+                heeure = document.getElementById("heeure"),
+                heeure_label = document.getElementById("heeure_label"),
+                miinute = document.getElementById("miinute"),
+                miinute_label = document.getElementById("miinute_label"),
+                seeconde = document.getElementById("seeconde"),
+                seeconde_label = document.getElementById("seeconde_label"),
+                maintenant = new Date(),
+                finanneee = new Date('October 31, 2021 01:00:00');
+ 
+            let tootal_secondes = (finanneee - maintenant) / 1000;
+             
+            if (tootal_secondes > 0)
+            {
+                let nb_joours = Math.floor(tootal_secondes / (60 * 60 * 24));
+                let nb_heeures = Math.floor((tootal_secondes - (nb_joours * 60 * 60 * 24)) / (60 * 60));
+                let nb_miinutes = Math.floor((tootal_secondes - ((nb_joours * 60 * 60 * 24 + nb_heeures * 60 * 60))) / 60);
+                let nb_seecondes = Math.floor(tootal_secondes - ((nb_joours * 60 * 60 * 24 + nb_heeures * 60 * 60 + nb_miinutes * 60)));
+ 
+                joour.textContent = caractere(nb_joours);
+                heeure.textContent = caractere(nb_heeures);
+                miinute.textContent = caractere(nb_miinutes);
+                seeconde.textContent = caractere(nb_seecondes);
+ 
+                joour_label.textContent = genre(nb_joours, 'jour');
+                heeure_label.textContent = genre(nb_heeures, 'heure');
+                miinute_label.textContent = genre(nb_miinutes, 'minute');
+                seeconde_label.textContent = genre(nb_seecondes, 'seconde');        
+            }
+ 
+            let minuteur = setTimeout("reboursF();", 1000);
+        }
+ 
+        function genre(nb, libelle)
+        {
+            return (nb > 1) ? libelle+'s' : libelle;
+        }
+ 
+        function caractere(nb)
+        {
+            return (nb < 10) ? '0'+nb : nb;
+        }
+ 
+        reboursF();
+    </script>
+									</article>
+								
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2> Level 2</h2>
+									<h3> Level 3</h3>
+									<h4> Level 4</h4>
+									<h5> Level 5</h5>
+									<h6> Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; <a href="">Nathan</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
